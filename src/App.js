@@ -1,26 +1,22 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { Component } from 'react'
+import Clock from './Clock'
+import Inc from './Inc'
+import Message from './Message'
+import List from './List'
+import Formtest from './Formtest'
+import Converter from './Converter'
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+export default class App extends Component {
+    render() {
+        return (
+            <div>
+                <Clock />
+                <Inc />
+                <Message />
+                <List />
+                <Formtest />
+                <Converter />
+            </div>
+        )
+    }
 }
-
-export default App;
